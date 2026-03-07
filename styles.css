@@ -170,7 +170,7 @@ a {
 }
 
 .brand-logo {
-    height: 80px;
+    height: 160px;
     width: auto;
     display: block;
 }
@@ -545,12 +545,15 @@ a {
     gap: 16px;
 }
 
-.payment-icons svg {
+.payment-logo {
+    height: 24px;
+    width: auto;
     opacity: 0.8;
     transition: opacity 0.3s;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
 
-.payment-icons svg:hover {
+.payment-logo:hover {
     opacity: 1;
 }
 
@@ -791,7 +794,7 @@ footer {
 }
 
 .footer-logo {
-    height: 80px;
+    height: 160px;
     width: auto;
     margin-bottom: 12px;
 }
