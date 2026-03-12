@@ -66,6 +66,7 @@ h1 {
 h1 span {
     background: linear-gradient(135deg, var(--primary), var(--secondary));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -160,7 +161,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 24px 5%;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: 100;
@@ -206,7 +207,7 @@ a {
 /* --- Hero Section --- */
 .hero {
     position: relative;
-    padding: 160px 5% 100px;
+    padding: 220px 5% 100px;
     display: flex;
     align-items: center;
     min-height: 80vh;
@@ -821,7 +822,8 @@ a {
     color: var(--text-muted);
 }
 
-.form-group input {
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 14px;
     border-radius: 8px;
@@ -833,7 +835,8 @@ a {
     transition: all 0.3s ease;
 }
 
-.form-group input:focus {
+.form-group input:focus,
+.form-group textarea:focus {
     outline: none;
     border-color: var(--primary);
     background: rgba(255,255,255,0.05);
@@ -879,6 +882,14 @@ footer {
     .contact-wrapper, .story-wrapper {
         flex-direction: column;
         padding: 40px 20px;
+    }
+
+    .brand-logo, .footer-logo {
+        height: 100px;
+    }
+
+    .hero {
+        padding-top: 180px;
     }
     
     .nav-links {
